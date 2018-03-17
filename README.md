@@ -10,6 +10,7 @@ sudo yum update
 ## rbenvインストール
 https://dev.classmethod.jp/server-side/language/build-ruby-environment-by-rbenv/
 
+```
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
@@ -20,6 +21,7 @@ source ~/.bash_profile
 rbenv --version
 rbenv install --list
 rbenv install 2.5.0
+```
 
 - ビルド失敗
 ```
