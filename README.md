@@ -173,6 +173,7 @@ sudo  ./configure --prefix=/usr/local --with-features=huge --enable-multibyte --
 sudo make
 sudo make install
 
+```
 [vagrant@localhost vim]$ vim --version
 VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Mar 17 2018 06:06:50)
 適用済パッチ: 1-1612
@@ -209,6 +210,7 @@ Huge 版 without GUI.  機能の一覧 有効(+)/無効(-)
 +eval              -mouse_gpm         +syntax
 +ex_extra          -mouse_jsbterm     +tag_binary
 +extra_search      +mouse_netterm     +tag_old_static
+```
 
 # deinパッケージ管理
 
