@@ -143,6 +143,7 @@ tmpfs               101488        0   101488    0% /run/user/1000
 ```
 
 あと、依存パケージのインストール
+```
 yum install -y openssl-devel readline-devel zlib-devel
 
 - 再ビルド
@@ -153,9 +154,10 @@ rbenv global 2.4.3
 
 [vagrant@localhost ~]$ ruby -v
 ruby 2.4.3p205 (2017-12-14 revision 61247) [x86_64-linux]
-
+```
 
 ## vimインストール　
+```
 https://qiita.com/silicsmz/items/b5ad3295863bb2b1de76
 lua付きでビルド
 
@@ -172,6 +174,7 @@ sudo  ./configure --prefix=/usr/local --with-features=huge --enable-multibyte --
 
 sudo make
 sudo make install
+```
 
 ```
 [vagrant@localhost vim]$ vim --version
