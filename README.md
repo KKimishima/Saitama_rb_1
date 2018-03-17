@@ -217,8 +217,10 @@ Huge 版 without GUI.  機能の一覧 有効(+)/無効(-)
 
 # deinパッケージ管理
 
+```
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh -o /tmp/installer.sh
 sh /tmp/installer.sh ~/.vim/dein
+```
 
 ```
 "dein Scripts-----------------------------
@@ -587,6 +589,7 @@ let g:syntastic_java_javac_config_file = "$HOME/.syntastic_javac_config"
 ```
 
 ## githubのsshキー
+```
 cd ~/.ssh
 ssh-keygen -t rsa
 
@@ -594,6 +597,7 @@ cat ./id_rsa.pubをgithubに登録
 
 git clone git@github.com:KKimishima/ssh_test.git
 OK
+```
 
 ## fizz_buzz追加
 ```
