@@ -10,6 +10,7 @@ sudo yum update
 ## rbenvインストール
 https://dev.classmethod.jp/server-side/language/build-ruby-environment-by-rbenv/
 
+```
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
@@ -20,6 +21,7 @@ source ~/.bash_profile
 rbenv --version
 rbenv install --list
 rbenv install 2.5.0
+```
 
 - ビルド失敗
 ```
@@ -141,6 +143,7 @@ tmpfs               101488        0   101488    0% /run/user/1000
 ```
 
 あと、依存パケージのインストール
+```
 yum install -y openssl-devel readline-devel zlib-devel
 
 - 再ビルド
@@ -151,9 +154,10 @@ rbenv global 2.4.3
 
 [vagrant@localhost ~]$ ruby -v
 ruby 2.4.3p205 (2017-12-14 revision 61247) [x86_64-linux]
-
+```
 
 ## vimインストール　
+```
 https://qiita.com/silicsmz/items/b5ad3295863bb2b1de76
 lua付きでビルド
 
@@ -170,7 +174,9 @@ sudo  ./configure --prefix=/usr/local --with-features=huge --enable-multibyte --
 
 sudo make
 sudo make install
+```
 
+```
 [vagrant@localhost vim]$ vim --version
 VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Mar 17 2018 06:06:50)
 適用済パッチ: 1-1612
@@ -207,11 +213,14 @@ Huge 版 without GUI.  機能の一覧 有効(+)/無効(-)
 +eval              -mouse_gpm         +syntax
 +ex_extra          -mouse_jsbterm     +tag_binary
 +extra_search      +mouse_netterm     +tag_old_static
+```
 
 # deinパッケージ管理
 
+```
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh -o /tmp/installer.sh
 sh /tmp/installer.sh ~/.vim/dein
+```
 
 ```
 "dein Scripts-----------------------------
@@ -580,6 +589,7 @@ let g:syntastic_java_javac_config_file = "$HOME/.syntastic_javac_config"
 ```
 
 ## githubのsshキー
+```
 cd ~/.ssh
 ssh-keygen -t rsa
 
@@ -587,3 +597,27 @@ cat ./id_rsa.pubをgithubに登録
 
 git clone git@github.com:KKimishima/ssh_test.git
 OK
+```
+
+## fizz_buzz追加
+```
+def fizz_buzz(num)
+  n = num.to_i
+  if n == 0
+    "無効な値でです"
+  elsif n % 15 == 0
+    "Fizz_Buzz"
+  elsif n % 3 == 0
+    "Fizz"
+  elsif n % 5 == 0
+    "Buzz"
+  else
+    n.to_s
+  end
+end
+
+puts "fizz_buzzの判別する数値を入力してくだしてください"
+print "数値:"
+num = gets.to_i
+puts "結果_#{fizz_buzz(num)}"
+```
